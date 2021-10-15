@@ -10,8 +10,8 @@
   --background-btn-color: #f5f4fa;
 
   --box-shadow: 0px 4px 4px 0px #00000040;
-  
---project-item-gap: 30px;
+
+  --item-gap: 30px;
 }
 
 /* Глобальные стили */
@@ -211,6 +211,10 @@ header {
 
 .features {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: -1 * var(--item-gap);
+  margin-left:  -1 * var(--item-gap);
+
 }
 
 .features-title {
@@ -223,8 +227,11 @@ header {
   color: var(--title-text-color);
 }
 
-.features-item:not(:last-child) {
-  margin-right: 30px;
+.features-item {
+  margin-top: var(--item-gap);
+  margin-left: var(--item-gap);
+
+  flex-basis: calc(100% / 4 - var(--item-gap));
 }
 
 .section-title {
@@ -240,10 +247,18 @@ header {
 /* Примеры работ */
 .examples {
   display: flex;
+
+  flex-wrap: wrap;
+
+  margin-top: -1 * var(--item-gap);
+  margin-left: -1 * var(--item-gap);
 }
 
-.examples-item:not(:last-child) {
-  margin-right: 30px;
+.examples-item {
+  margin-top: var(--item-gap);
+  margin-left: var(--item-gap);
+
+  flex-basis: calc(100% / 3 - var(--item-gap));
 }
 
 /* Команда */
@@ -255,20 +270,31 @@ header {
 .team {
   display: flex;
   text-align: center;
+  flex-wrap: wrap;
+  margin-top: -1 * var(--item-gap);
+  margin-left: -1 * var(--item-gap);
 }
 
 .team-item {
+  margin-top: var(--item-gap);
+  margin-left: var(--item-gap);
+
+  flex-basis: calc(100% / 4 - var(--item-gap));
   box-shadow: var(--box-shadow);
   border-radius: 4px;
   overflow: hidden;
 }
 
 .team-member {
-  margin-bottom: 30px;
 }
 
 .team-item:not(:last-child) {
-  margin-right: 30px;
+  /* margin-right: 30px; */
+}
+
+.team-information {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-title {
@@ -284,7 +310,6 @@ header {
 .team-text {
   font-size: 16px;
   line-height: 1.18;
-  margin-bottom: 30px;
 }
 
 /* Футер */
@@ -329,7 +354,6 @@ header {
 .filter {
   display: flex;
   justify-content: center;
-  /* margin-bottom: 34px; */
 }
 
 .filter-item:not(:last-child) {
@@ -361,19 +385,18 @@ header {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -1 * var(--project-item-gap);
-  margin-left: -1 * var(--project-item-gap);
+  margin-top: -1 * var(--item-gap);
+  margin-left: -1 * var(--item-gap);
 }
 
 .projects-item {
-  margin-top: var(--project-item-gap);
-  margin-left: var(--project-item-gap);
+  margin-top: var(--item-gap);
+  margin-left: var(--item-gap);
 
-  flex-basis: calc(100% / 3 - var(--project-item-gap));
+  flex-basis: calc(100% / 3 - var(--item-gap));
 
   box-shadow: var(--box-shadow);
 }
-
 
 .projects-information {
   padding: 20px 24px;
