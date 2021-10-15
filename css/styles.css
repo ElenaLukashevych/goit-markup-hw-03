@@ -213,8 +213,8 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin-top: -1 * var(--item-gap);
-  margin-left:  -1 * var(--item-gap);
-
+  margin-left: -1 * var(--item-gap);
+  margin-left: -1 * var(--item-gap);
 }
 
 .features-title {
@@ -317,6 +317,10 @@ header {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-container {
+  padding-left: 100px;
 }
 
 .footer-logo {
