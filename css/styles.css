@@ -58,7 +58,6 @@ img {
 }
 .list {
   list-style: none;
- 
 }
 .link {
   text-decoration: none;
@@ -291,8 +290,6 @@ header {
 .team-member {
 }
 
-
-
 .team-information {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -324,6 +321,7 @@ header {
 }
 
 .footer-logo {
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -360,7 +358,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
 
-    margin-top: -8px;
+  margin-top: -8px;
   margin-left: -8px;
   margin-bottom: 34px;
 }
@@ -378,7 +376,6 @@ header {
   border: none;
   border-radius: 4px;
 
-
   cursor: pointer;
 
   color: var(--title-text-color);
@@ -389,7 +386,6 @@ header {
 .filter-btn:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-
 }
 
 /* Проекты */
