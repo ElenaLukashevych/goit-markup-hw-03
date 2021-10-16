@@ -38,7 +38,7 @@ p {
   margin: 0;
 }
 
-.ul {
+ul {
   margin: 0;
   padding: 0;
 }
@@ -58,6 +58,7 @@ img {
 }
 .list {
   list-style: none;
+ 
 }
 .link {
   text-decoration: none;
@@ -71,6 +72,8 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  /* border: 1px solid tomato; */
 }
 
 .section {
@@ -212,11 +215,16 @@ header {
 .features {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -1 * var(--item-gap);
-  margin-left: -1 * var(--item-gap);
-  margin-left: -1 * var(--item-gap);
+  margin-top: calc(-1 * var(--item-gap));
+  margin-left: calc(-1 * var(--item-gap));
 }
 
+.features-item {
+  margin-top: var(--item-gap);
+  margin-left: var(--item-gap);
+
+  flex-basis: calc(100% / 4 - var(--item-gap));
+}
 .features-title {
   margin-bottom: 10px;
 
@@ -225,13 +233,6 @@ header {
   text-transform: uppercase;
 
   color: var(--title-text-color);
-}
-
-.features-item {
-  margin-top: var(--item-gap);
-  margin-left: var(--item-gap);
-
-  flex-basis: calc(100% / 4 - var(--item-gap));
 }
 
 .section-title {
@@ -250,8 +251,8 @@ header {
 
   flex-wrap: wrap;
 
-  margin-top: -1 * var(--item-gap);
-  margin-left: -1 * var(--item-gap);
+  margin-top: calc(-1 * var(--item-gap));
+  margin-left: calc(-1 * var(--item-gap));
 }
 
 .examples-item {
@@ -268,11 +269,13 @@ header {
 }
 
 .team {
+  padding: 0;
+
   display: flex;
   text-align: center;
   flex-wrap: wrap;
-  margin-top: -1 * var(--item-gap);
-  margin-left: -1 * var(--item-gap);
+  margin-top: calc(-1 * var(--item-gap));
+  margin-left: calc(-1 * var(--item-gap));
 }
 
 .team-item {
@@ -318,7 +321,6 @@ header {
 }
 
 .footer-container {
-  padding-left: 100px;
 }
 
 .footer-logo {
@@ -393,8 +395,8 @@ header {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -1 * var(--item-gap);
-  margin-left: -1 * var(--item-gap);
+  margin-top: calc(-1 * var(--item-gap));
+  margin-left: calc(-1 * var(--item-gap));
 }
 
 .projects-item {
