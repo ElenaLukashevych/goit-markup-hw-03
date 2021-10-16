@@ -66,7 +66,7 @@ img {
 /* Контейнер */
 
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -288,9 +288,7 @@ header {
 .team-member {
 }
 
-.team-item:not(:last-child) {
-  /* margin-right: 30px; */
-}
+
 
 .team-information {
   padding-top: 30px;
@@ -357,11 +355,16 @@ header {
 
 .filter {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+
+    margin-top: -8px;
+  margin-left: -8px;
 }
 
-.filter-item:not(:last-child) {
-  margin-right: 8px;
+.filter-item {
+  margin-top: 8px;
+  margin-left: 8px;
 }
 
 .filter-btn {
@@ -370,6 +373,8 @@ header {
   line-height: 1.62;
 
   border: none;
+  border-radius: 4px;
+
 
   cursor: pointer;
 
@@ -382,7 +387,6 @@ header {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 
-  border-radius: 4px;
 }
 
 /* Проекты */
